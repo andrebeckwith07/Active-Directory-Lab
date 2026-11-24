@@ -1,4 +1,4 @@
-![Active Directory Lab](ad-lab.png)
+<img src="ad-lab.png" alt="Active Directory Lab" width="500">
 
 # Active Directory Lab
 
@@ -9,11 +9,11 @@ The project was built around a contractor-management scenario: create accounts, 
 
 **Structure**
 
-![Assignment structure](Active_D.png)
+<img src="Active_D.png" alt="Assignment structure" width="550">
 
 **Workflow**
 
-![Assignment workflow](Active_Dir.png)
+<img src="Active_Dir.png" alt="Assignment workflow" width="650">
 
 The workflow covers:
 - Creating a first user, then cloning it to make two more
@@ -26,7 +26,7 @@ The workflow covers:
 ## My lab environment
 This is the Active Directory Users and Computers tree from my own CYSE.local domain. The assignment's CONTRACTOR accounts map to the user accounts below.
 
-![My Active Directory objects](Active_Proj.png)
+<img src="Active_Proj.png" alt="My Active Directory objects" width="500">
 
 - **ManagePasswords:** security group at the domain level, with user1 as a member
 - **user1:** member of ManagePasswords, delegated to manage accounts and reset passwords
@@ -51,4 +51,8 @@ Defenders can watch Windows Event IDs such as 4720 (account created), 4728/4732/
 VMware Workstation, Windows Server 2022, Active Directory Domain Services, Active Directory Users and Computers
 
 ## What I learned
-(write 2 or 3 sentences in your own words)
+- I learned how to build a virtual machine and install Windows Server 2022 from scratch.
+- I learned how to turn a server into a domain controller with Active Directory.
+- I learned how to make users and groups, and how to give a group the power to reset passwords.
+- I learned how to force a password change at next login and test it by signing in as another user.
+- I learned why attackers go after Active Directory. One stolen admin account can give them control of a whole network.
